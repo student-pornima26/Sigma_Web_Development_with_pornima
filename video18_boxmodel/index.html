@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+
+        }
+
+        .box1 {
+            color: aliceblue;
+            padding: 10px;
+            margin: 30px;
+            border: 2px solid blue;
+            height: 200px;
+            /* height ke sath nhi likha to content ke content height hogi but if it include boxsizing it include under border+padding+content in full width and height of the content */
+            box-sizing: border-box;
+        }
+/* dono me margin collapse se greater margin apply ho gai */
+        .box2 {
+            color: red;
+             padding: 10px;
+            margin: 25px;
+            border: 2px solid rgb(1, 1, 1);
+            height: 200px;
+             box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+
+</body>
+
+</html>

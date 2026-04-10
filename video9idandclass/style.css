@@ -1,0 +1,22 @@
+.red{
+background-color: rgb(235, 6, 6);
+
+}
+
+#seconddiv{
+     background-color: brown; 
+    
+}
+
+.bg-yellow{
+ color: azure;
+}
+
+
+.myclass{
+     background-color: blue;
+}
+
+#myid{
+     background-color: aqua;
+}

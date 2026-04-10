@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding VS Margin</title>
+    <!-- margin which create space outsid ethe element and padding is something which create the space inside the element  -->
+<style>
+    .all{
+        background-color: black;
+    }
+    .mar{
+        color: aliceblue;
+    }
+    .all .mar{
+        background-color: orange;
+        height: 100px;
+        width: 100px;
+        margin:50px;
+        /* margin ne element ke bahar invisible space create ki hai */
+    }
+    .all .pad{
+        background-color: yellow;
+        height: 100px;
+        width: 100px;
+        padding: 30px;
+        /* padding make space in between element and border */
+    }
+</style>
+</head>
+<body>
+    <div class="all">
+        <div class="mar">
+            This is margin
+        </div>
+        <div class="pad">
+            This is padding
+        </div>
+    </div>
+</body>
+</html>

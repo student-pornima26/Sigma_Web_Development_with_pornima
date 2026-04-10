@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <!-- invisible space in page content between two elements check proper space between them -->
+</head>
+<body>
+    <!-- readiabality and user experience -->
+     <!-- types of margin
+      1] All side equal
+      2]Different margin for each sides
+      3]Auto margin for centering
+      4}negative margin
+      -->
+</body>
+</html>
