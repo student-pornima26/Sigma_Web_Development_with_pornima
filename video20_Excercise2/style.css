@@ -1,0 +1,28 @@
+h1{
+    background-color: aqua;
+}
+
+div > p{
+    background-color: blue;
+    color: white;
+}
+/* first-child selector */
+div p:first-child{
+    background-color: yellow;
+    color: red;
+
+}
+/* nth child selector you select anty number child */
+/* div p:nth-child(5){
+    background-color: yellow;
+    color: red;
+} */
+
+
+ /* one more type of selecting child  */
+ /* div p:not(first-child){
+       background-color: blue;
+    color: white;
+    
+
+ } */

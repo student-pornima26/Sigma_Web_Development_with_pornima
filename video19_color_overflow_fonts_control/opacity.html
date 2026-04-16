@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+            opacity: 0.68;
+        }
+        /* when hover its opacity 1and see the actual image and apply transition duration how much time takes it to convert it from blur to actual */
+        img:hover{
+            opacity: 1;
+            transition-duration: 2s;
+        }
+        /* div img:nth-child(2){
+            height: 200px;
+            width: 200px;
+        } */
+    </style>
+</head>
+<body>
+    <!-- opacity is transparency of image from 0 to 1 give 0 as no transparency 1 is full image  -->
+    <h1>Opacity property</h1>
+    <div class="image-box">
+        <img src="https://cdn.pixabay.com/photo/2025/06/28/07/34/waterfall-9684883_1280.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2025/06/28/07/34/waterfall-9684883_1280.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2025/06/28/07/34/waterfall-9684883_1280.jpg" alt="">
+        <img src="https://cdn.pixabay.com/photo/2025/06/28/07/34/waterfall-9684883_1280.jpg" alt="">
+
+    </div>
+</body>
+</html>

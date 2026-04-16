@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+
+            border: 2px solid red;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 10vh;
+            margin: 10px auto;
+            background-color: aqua;
+
+        }
+
+        .container {
+            border: 2px solid red;
+            /* width: 1920px; */
+            width: 80vw;
+            /* kam se kam itni height rahni hi chaiye */
+           min-height: 80vh;
+            /* (top -bottom) (left -right) */
+            margin: 20px auto;
+            background-color: aqua;
+            font-size: 18px;
+
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .container p {
+            /* inherit karne ke baad 2 guna bad gaya  */
+            /* with refernce to container parent font size and inherit size 18px  */
+            /* font-size: 2em;*/
+
+
+            /* inherit from root value and increase size by root value by root value by some parcent */
+            /* with refernce to html root element 12px */
+            font-size: 2rem;
+            /* yaane container parents ki 50%of width */
+            width: 50%;
+            border: 2px solid red;
+
+            
+
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid red;
+             margin: 20px auto;
+            /* background-color: red; */
+            color: rgb(10, 10, 10);
+            font-size: 25px;
+            /* for desktop 100vmin is its height */
+            /* width: 100vmin; */
+            /* width: 100vh;  */
+            /* both same */
+            width: 80vw;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur neque illo laborum alias doloribus libero
+            debitis. Necessitatibus iusto in sint, sapiente, modi magnam non delectus perferendis atque omnis maiores
+            perspiciatis, eius repudiandae eum est.
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis suscipit voluptatum numquam exercitationem delectus ipsum aliquam voluptas laboriosam nostrum. Eveniet consequuntur fugit ad eum ullam! Non, quibusdam quisquam? Voluptas, sit! Provident tenetur neque consequatur maxime labore nisi vel tempore minus ea illo, nemo pariatur doloremque voluptatibus! Quasi cumque similique tempora porro nesciunt, impedit repellat dicta deserunt voluptates reiciendis pariatur totam quia quisquam voluptas quis quos excepturi delectus labore adipisci culpa? Quis error amet, repellat exercitationem ea ducimus, voluptatem excepturi quod minus dolorem dolores nostrum placeat perferendis officiis quos eius suscipit rerum consequatur. Tempora soluta consequuntur alias, quas accusamus iste officiis dolorum recusandae iusto nobis saepe, incidunt eligendi architecto! Maiores sapiente aperiam esse eligendi amet, dolores neque provident earum quidem quae corrupti eius non expedita obcaecati molestiae culpa rerum consequuntur necessitatibus. Culpa amet assumenda tempore dolorum qui vel ut molestias harum distinctio quis, totam officiis numquam, dignissimos suscipit enim! Nobis consequatur iure aspernatur similique facere asperiores culpa iusto necessitatibus, a laudantium nesciunt error. Commodi, cumque ad praesentium rem repellat veritatis inventore ullam architecto! Commodi, debitis alias. Enim, at quis soluta obcaecati, porro molestiae perspiciatis iure recusandae aliquam, necessitatibus esse dignissimos voluptatibus quibusdam id nobis expedita rem deserunt error adipisci excepturi quae? Nisi magni soluta repudiandae deleniti, iusto excepturi quibusdam. Consectetur quo vel vero quia corrupti quidem magni non totam reprehenderit, in adipisci sequi ratione. Est eius vero ab, velit quisquam tempora minus corporis impedit, vitae numquam amet doloribus magnam rerum natus! Voluptas nihil ullam dolorem, eius quis pariatur qui, et exercitationem consequuntur perspiciatis numquam praesentium doloribus ipsa tempore nostrum provident enim dolore quo necessitatibus in officiis totam atque voluptate. Porro esse repudiandae nesciunt similique ipsa possimus quae incidunt, deserunt veritatis! Consequuntur praesentium optio voluptatum vel neque laudantium commodi magni itaque, quis quos autem nemo, eligendi pariatur in. Aperiam culpa autem veritatis? </p>
+    </div>
+           <div class="mycont">
+        I am another container for vmin and vmax
+    </div>
+</body>
+
+</html>
