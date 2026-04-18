@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and</title>
+    <style>
+.cards{
+    border: 3px solid black;
+  display: flow-root;
+  /* fit the elements in the container */
+  /* overflow: auto; */
+}
+.card{
+    border: 2px solid red;
+}
+img{
+    /* float left fit the image in left side and below content in right side of the img  */
+    /* due to float it overflow from their parent container for that we set display */
+    float: right;
+  
+}
+ .card:nth-child(3){
+    background-color: aqua;
+    /* mere aaju baju koi nhi chaiye  */
+clear: both;
+ }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <!-- 1st child -->
+        <img src="https://images.unsplash.com/photo-1444487233259-dae9d907a740?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9hdHxlbnwwfHwwfHx8MA%3D%3D" alt="" width="250" height="250">
+        <!--2nd child  -->
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloribus necessitatibus est officia cum quos dolorem magni sit repudiandae accusamus voluptates quibusdam distinctio, iste suscipit magnam. Temporibus vitae provident ducimus repellat amet pariatur.</p>
+        
+        </div>
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque eligendi velit temporibus, eius dolore libero ea maiores modi facilis ab minima odio voluptates incidunt placeat aspernatur porro dolorum ratione quia inventore alias tempora corrupti consequatur accusantium necessitatibus! Vitae error eaque fugiat quos, atque odit deserunt cupiditate nisi. Ipsum eius rerum necessitatibus, iusto dolorum autem quidem molestiae quos aperiam accusantium nostrum eaque iure voluptatibus veniam dolore sed. Tempore rem voluptatum quod aliquam quas architecto ut ad quasi fuga illum enim labore, eius molestias? Consectetur reprehenderit voluptates perferendis tempore inventore numquam ex, quia, quae iure non, amet dolor culpa aliquid magni nihil quidem iusto quas. Quod iusto maxime repudiandae deleniti tenetur blanditiis hic quaerat aspernatur voluptates amet, vitae cum?</div>
+        <div class="card">Card3</div>
+        <div class="card">hello</div>
+        
+    </div>
+</body>
+</html>

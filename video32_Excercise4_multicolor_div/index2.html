@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Baloo+Bhaina+2:wght@400..800&family=Kapakana:wght@300..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ul{
+             display: inline;
+        } */
+        @media only screen and (min-width:445px) {
+            body {
+                background-color: pink;
+            }
+
+        }
+
+        @media only screen and (max-width: 500px) {
+            ul>li {
+                opacity: var(--opa);
+            }
+        }
+
+        :root {
+            --cbox1: red;
+            --cbox2: rgb(255, 234, 0);
+            --cbox3: green;
+            --opa: 0.3;
+        }
+
+        nav {
+             background-color: rgba(255, 0, 136, 0.811);
+        }
+
+        ul {
+            display: flex
+           
+        }
+
+        ul li {
+            list-style: none;
+            margin: 7px;
+            height: 23px;
+            width: 55px;
+            border: 2px solid red;
+            padding: 15px 20px;
+            align-items: center;
+            background-color: var(--cbox2);
+            /* display: inline-block; */
+            font-family: "Baloo Bhai 2", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 14px;
+            /* text-decoration: none; */
+
+        }
+ul li a{
+    color: rgb(150, 173, 255);
+    text-decoration: none;
+}
+        ul li:first-child {
+            background-color: var(--cbox1);
+        }
+
+        li:nth-child(3) {
+            background-color: var(--cbox3);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Address</a></li>
+                <!-- <div class="li">
+                    <ol>
+                        <li>address</li>
+                        <li>address</li>
+                        <li>address</li>
+                    </ol>
+                    <li>hello</li>
+                </div> -->
+            </ul>
+
+        </div>
+    </nav>
+</body>
+
+</html>

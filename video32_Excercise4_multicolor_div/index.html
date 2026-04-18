@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor Div</title>
+    <style>
+        /* .boxes{
+    display:flex;
+} */
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: blue;
+            }
+
+            /* jub vo us max-width ke under aaye to column me dikhe */
+            .boxes {
+                /* background-color: red; */
+                /* flex-direction: column; */
+            }
+
+            ul li {
+/* background-color: black; */
+                
+                /* padding: 15px; */
+                width: 96px;
+                /* flex-direction: column; */
+            }
+            .yellow_box{
+                background-color: rgb(212, 222, 16);
+            }
+            .red_box{
+                background-color: red;
+            }
+            .violet_box{
+                background-color: violet;
+            }
+            
+        }
+
+        body {
+            /* background-color: deeppink; */
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        ul li {
+
+         
+            margin: 3px;
+            padding: 22px;
+            background-color: aqua;
+
+        }
+      
+       /* if same name se dono which means media or outside media code me same property set ki to ek hi select hogi jo pahle lagi hai media ke bahar  */
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="boxes">
+            <ul>
+                <li class="yellow_box">Home</li>
+                <li class="violet_box">About</li>
+                <li class="red_box">Contact</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

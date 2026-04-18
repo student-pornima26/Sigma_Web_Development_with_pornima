@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex box</title>
+    <style>
+.container{
+border: 2px solid rgb(69, 2, 2);
+/* flex property apply on container only */
+display:flex;
+height: 90vh;
+/* width: 50vw; */
+/* all flex property apply on container only and see the changes */
+/* justify-content: flex-end, flex-start, space-around(give space around box all four sides) and space-between(set space between the items only not all around) */
+justify-content:center;
+/* baselign to make all items center flex-end, start etc  */
+/* align-items: flex-end; */
+
+align-items: center;
+/* reverse the column content from 5 to 1  */
+/* flex-direction: column-reverse; */
+/* flex-direction: row;
+ */
+ /* when multiples lines of items are there  */
+ /* align-content: center; */
+
+/* juatify-item is not in flex property */
+
+ /* to wrap up the content if it is overflow */
+ flex-wrap: wrap;
+ /* flex-wrap: wrap-reverse; */
+
+/* flex-direction: row-reverse; */
+/* it reverse the row direction */
+/* flex-direction: column; */
+
+flex-flow: row wrap;
+/* flex-flow: column nowrap; */
+/* flex-flow: row wrap-reverse; */
+/* <flex-direction><flex-wrap>  */
+
+    /* gap: 30px; */
+
+    /* row-gap: 30px; */
+    /* between row gap  */
+    /* column-gap: 30px; */
+    /*  between column gap */
+    /* gap between element space like margin */
+     
+    gap: 10px 40px;
+    /* gap first between row gap and column gap */
+
+}
+.item{
+    width: 92px;
+    height: 92px;
+    background-color: violet;
+    border: 2px solid black;
+    /* margin:9px; */
+    display: flex;
+    /* display: inline; */
+    
+justify-content: center;
+align-items: center;
+
+
+/* flex-grow: 1; */
+    
+}
+.order-1{
+    order: 3;
+ 
+    /* order means the position of the box in flex container from higher to lowest by default order is 0 */
+
+}
+.order-2{ 
+    order: 2;
+}
+.item1{
+    align-self: flex-end ;
+flex-shrink: 2;
+/* flex-grow: 2; */
+/* 2 item ki jagah lega */
+/* double size hojayega usse */
+
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+             <div class="item order-1">1</div>
+            <div class="item">2</div>
+            <div class="item order-2">3</div>
+            <div class="item">4</div>
+           
+           
+            
+            <div class="item">5</div>
+           
+        </div>
+    </main>
+</body>
+</html>

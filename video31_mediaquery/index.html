@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+margin: 34px;
+        }
+        body{
+            background-color: red;
+            /* margin: 34px; */
+        }
+        /* portrait (height is highest than width) and landscape (width is higher than height) */
+        /* if landscape then border is apply to it */
+        @media only screen and (orientation:landscape){
+            body{
+                border: 7px solid blueviolet;
+                /* background-color: red; */
+
+            }
+        }
+        /* 455 se chota raha to code ke under ka istemal hoga otherwise use bada rah to ye apply nhi hoga */
+        /* max-width and min-width is apply  */
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            /* jub vo us max-width ke under aaye to column me dikhe */
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        /* 
+        @media not/only mediatype and (expressions){
+        CSS-code;
+        } 
+         */
+         .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 14px;
+            margin: 4px;
+         }
+         .boxes{
+            /* to horizontally align  */
+           display: flex;
+         }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Hey i am a red body guy!! -->
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

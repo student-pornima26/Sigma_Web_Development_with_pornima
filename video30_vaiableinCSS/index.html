@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Variable in CSS */
+/* global variable declaration in this :root */
+       :root{
+        --color: rgb(74, 74, 178);
+        --seccolor: rgb(143, 143, 228);
+        /* default padding is apply to it means its apply to pixels also */
+        --defpad: 24px;
+        --defopc: 0.5;
+       }
+        /* nav:first-child {
+            list-style-type: disc;
+        }
+        main::first-line{
+            color: rgb(6, 232, 232);
+        } */
+        /* ul li{
+    list-style-type: none;
+} */
+        /* nav ul{
+    list-style-type: circle;
+ } */
+        /* nav > ul{
+    list-style-type: decimal;
+ } */
+        /* div:first-child{
+    background-color: aqua;
+  } */
+        /* .nav{
+    background-color: rgb(217, 68, 68);
+   list-style-type: decimal;
+   } */
+        /* div ul {
+            background-color: rgb(217, 68, 68);
+            list-style-type: decimal;
+        } */
+        .nav {
+            background-color: var(--color);
+          /* list-style: none ; */
+        }
+        ul{
+            display: flex;
+              list-style: none ;
+        }
+         ul li {
+            /* list-style: none; */
+            /* list-style-type: decimal; */
+            padding: var(--defpad) ;
+            margin: 12px;
+            /* variable is also apply to border also */
+           border: 2px solid var(--seccolor); 
+           /* it is also used to give opacity  */
+           opacity: var(--defopc);
+        }
+        .para{
+            background-color:  var(--seccolor);
+        }
+        ul li:first-child{
+            /* local variable declaration which is ovewrite */
+            --color:green;
+            /* fall back value if --color variable isn't declare */
+            background-color: var(--color, orange);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolore velit modi quam officiis,
+            cosequuntur, vero numquam non repellendus molestiae quas eum mollitia hic! Fuga.</p>
+    </div>
+
+
+</body>
+
+</html>
