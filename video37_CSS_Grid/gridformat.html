@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 100vh;
+            /* height: 80vh; */
+            border: 2px solid rgb(16, 16, 16);
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* 1fraction of total */
+            /* it used for fraction of total width */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+            /* 1fr ko 4 bar repeat */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* min , max width*/
+            /* grid-template-columns: repeat(4,minmax(100px, 1fr));*/
+
+            /* why dont we use justify content because of container and grid is different container is too big and we justify grid centre / */
+
+            grid-template-columns: repeat(4, 160px);
+            grid-template-rows: repeat(2,160px);
+            /* it seperately set gap of rows and column */
+            /* gap: 34px; */
+            row-gap: 10px;
+            column-gap: 30px;
+            /* end */
+
+            /* ye if container is big and grid is small */
+
+            /* justify-content: center; */
+            /* align-content: end; */
+            
+            /* ye cell ke arround properties lagegi */
+            justify-items: center;
+            align-items: center;
+
+            /* it align content and align item or justify content and justify items all */
+            place-content: center;
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+
+        }
+
+        .item4 {
+            align-self: flex-start;
+            justify-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

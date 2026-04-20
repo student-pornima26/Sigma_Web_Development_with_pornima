@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 
+      nav{
+        position: fixed ;
+       
+      } */
+        nav {
+            position: sticky;
+            top: 2px;
+        }
+
+        ul {
+
+            list-style: none;
+            display: flex;
+            background-color: rgb(136, 249, 211);
+
+        }
+
+        ul li {
+
+
+            margin: 11px;
+            padding: 5px;
+
+        }
+
+        .circle {
+
+            border: 2px solid aqua;
+            background-color: aqua;
+            /* position: fixed; */
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            bottom: 10px;
+            position: fixed;
+            right: 4px;
+        }
+
+        /* .box2{
+    align-content:centre;
+} */
+        .container_2 {
+            display: flex;
+font-size: 2em;
+            border-radius: 6px;
+            border: 2px solid black;
+            height: 150px;
+            /* width:350x; */
+            margin: 33px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            background-color: rgb(41, 105, 96);
+            height: 134px;
+            align-items: center;
+
+
+        }
+
+        .container {
+            background-color: rgb(62, 154, 123);
+            /* display: flex; */
+            /* to centre the div  */
+
+           text-align: center;
+           padding: 10px 12px;
+        }
+
+        .box1 {
+            border: 2px solid rgb(0, 0, 0);
+            margin: 30px;
+            display:inline-block;
+            /* display: flex; */
+            height: 70vh;
+            width: 39%;
+
+            align-items: center;
+            justify-content: center;
+        }
+        .box2 {
+            border: 2px solid rgb(0, 0, 0);
+            margin: 30px;
+            display:inline-block;
+          
+            height: 70vh;
+            width: 39%;
+  /* display: flex; */
+  /* after display flex it apply under box content */
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+
+   
+    <nav>
+
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>More</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="box1">
+                Container1
+            </div>
+            <div class="box2">
+                Container1
+            </div>
+        </div>
+        <div class="container_2">
+
+            Welcome to web development Express
+
+        </div>
+    </main>
+    <footer>
+        Contact:gmail.com
+    </footer>
+    <div class="circle">
+
+    </div>
+   
+</body>
+
+</html>

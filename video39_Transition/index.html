@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container {
+            background-color: red;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: aqua;
+            height: 4vh;
+            width: 5vw;
+            transition-property: Transform;
+            transition-property: all;
+            /* it apply to all properties of translate class  */
+            /* kitne der tak chalega  */
+        
+            /* kis kis me apko chaiye usko kar sakte */
+            transition-property: background, transform;
+
+            transition-duration: 3s;
+            transition-timing-function: Fast Out;
+            transition-delay: 1s;
+            /* kitne der baad chalu hoga */
+
+            transition: all 3s cubic-bezier(0.32, 0.59, 0, 1) 1s;
+
+        }
+
+        .translate {
+            /* from x and y side it apply it get size of box */
+            /* transform:translate(10vh, 10vw); */
+            /* transform: translate(10px); */
+            /* transform: translateX(10%) translateY(10%); */
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            /* scale yanne bada ho jayega */
+            background: #080238;
+            color: aliceblue;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate">
+            4
+
+        </div>
+    </div>
+</body>
+
+</html>

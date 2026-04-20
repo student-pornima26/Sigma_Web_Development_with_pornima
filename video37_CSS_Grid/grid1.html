@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .container {
+    /* width:80vw; */
+        border: 2px solid rgb(16, 16, 16);
+        display: grid;
+        grid-template-columns: [pahla] 120px [doosra] 100px [t];
+        /* give name with bracket  */
+        grid-template-rows: 100px 100px 100px;
+        /*iske humne 4 rows bana di   */
+
+
+      
+    }
+
+    .item {
+        border: 2px solid red;
+        height: 55px;
+        width: 55px;
+    }
+
+    .item4 {
+        grid-row: 1/2;
+        /* or you can do below are same */
+        /* grid-row-start: 1;
+        grid-column-end: 2; */
+        /* item start from row no. 1 and end with to same to both row and column */
+        grid-column: pahla/t;
+        /* pahla se tisre tak space dusra niche shift kar dena */
+        /* 1st line column se start ho 2 column tak jaye */
+    }
+
+    .item1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        /* same */
+        /* grid-column-start: 1;
+        grid-row-end: 2;         */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

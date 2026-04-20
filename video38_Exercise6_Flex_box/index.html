@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Exercise</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar1 {
+            margin: 20px;
+            /* justify-content: center; */
+
+            height: 65px;
+            background-color: aqua;
+            display: flex;
+            
+justify-content: space-around;
+        }
+
+        .navbar2 {
+            
+
+        }
+
+        nav {
+            position: sticky;
+        }
+
+        ul {
+            /* it only set on ul because it is parents of unorder list  */
+            display: flex;
+
+
+        }
+
+        ul li {
+            margin: 1px;
+            padding: 11px;
+            /* background: #d51111; */
+            /* list-style-position: inside; */
+            /* list-style: none; */
+            list-style-type: none;
+        }
+
+        .part1 {
+            height: 50px;
+            border: 2px solid black;
+            width: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .part1_1 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar1">
+
+        <div class="circle">
+            <div class="part1">
+                <div class="part1_1">
+                    UE
+                </div>
+            </div>
+
+            <div class="navbar2">
+            <nav>
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>Our Company</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
